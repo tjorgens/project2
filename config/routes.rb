@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users, path: "", path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   resources :portfolios, except: [:show]
   get 'angular-items', to: 'portfolios#angular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
-  get 'about-me', to: 'pages#about'
-  get 'contact', to: 'pages#contact'
+  get 'about-me', to: 'page#about'
+  get 'contact', to: 'page#contact'
 
   resources :blogs do
     member do
@@ -13,5 +13,5 @@ Rails.application.routes.draw do
     end
   end
   
-  root to: 'pages#home'
+  root to: 'page#home'
 end
