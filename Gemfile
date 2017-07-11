@@ -57,3 +57,4 @@ gem 'devise', '~> 4.3'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+gem 'jorgensen_view_tool', git: 'https://github.com/tjorgens/jorgensen_view_tool'
