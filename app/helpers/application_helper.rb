@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    JorgensenViewTool::Renderer.copyright 'Tess Jorgensen', 'All Rights Reserved'
+  end
 end

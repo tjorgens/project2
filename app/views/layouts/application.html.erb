@@ -10,6 +10,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -19,6 +20,8 @@
   <%= login_helper %>
 
   <%= yield %>
+
+  <%= copyright_generator %>
 
   <%= source_helper("application") %>
     </p>
