@@ -1,9 +1,9 @@
 <div class="card">
   <div class="row"> 
     <div class="col-md-8"> 
-      <p>
-        <h2 class="heading">Edit <%= resource_name.to_s.humanize %></h2>
-      </p>
+    
+      <h2 class="heading">Edit <%= resource_name.to_s.humanize %></h2>
+      
         <div class="card-block">
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
             <%= devise_error_messages! %>
@@ -41,11 +41,9 @@
               <%= f.password_field :current_password, autocomplete: "off", class: 'form-control' %>
             </div>
           
-            <p>
-              <div class="form_group center-btn">
-                <%= f.submit "Update", class: "btn btn-primary" %>
-              </div>
-            </p>
+            <div class="form_group center-btn">
+              <%= f.submit "Update", class: "btn btn-primary" %>
+            </div>
             
             <div class="auth-links center-btn">
               <%= link_to "Back", :back %>
@@ -55,9 +53,9 @@
         </div>
     </div>
     <div class="col-md-4"> 
-      <p>
-        <h3 class="heading">Cancel my account</h3>
-      </p>
+      
+      <h3 class="heading">Cancel my account</h3>
+      
       <p class="heading">Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-danger center-btn" %></p>
     </div>
   </div>
