@@ -17,12 +17,13 @@
   <%= render "shared/portfolio_nav" %>
   
   <%= render "shared/portfolio_masthead" unless logged_in?(:site_admin) %>
-    
+  
   <%= yield %>
    
+  <%= source_helper("alert alert-info") %>
+   
   <%= render "shared/portfolio_footer" %>
-    
-  <%= source_helper("application") %>
+
     </p>
   </body>
 </html>
